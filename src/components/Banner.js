@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../axios';
 import requests from '../request';
-import './Banner.css';
+import '../css/Banner.css';
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -35,7 +35,7 @@ function Banner() {
           <button className="banner__button">My List</button>
         </div>
         <h1 className="banner__description">{truncate(movie?.overview, 150)}</h1>
-        <div className="banner__fadebottom"></div>
+        <div className="banner--fadebottom"></div>
       </div>
     </header>
   );
